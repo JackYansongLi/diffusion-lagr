@@ -19,6 +19,6 @@ test_schedule_monotonicity_and_terminal_clipping (test_numerics.ScheduleAndSampl
 test_selected_history_indices (test_numerics.ScheduleAndSamplingTests.test_selected_history_indices) ... ok
 
 ----------------------------------------------------------------------
-Ran 19 tests in 0.112s
+Ran 19 tests in 0.082s
 
 OK

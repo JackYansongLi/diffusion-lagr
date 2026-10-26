@@ -1,0 +1,21 @@
+{
+  "finding": {
+    "resolution": "plot and captions corrected, outputs and manifest regenerated",
+    "severity": "P2",
+    "subject": "Figure 3b must plot 1-alpha_bar on logarithmic ordinate"
+  },
+  "not_validated": [
+    "neural inference",
+    "training",
+    "full dataset",
+    "all paper figures",
+    "final PDF layout"
+  ],
+  "numerical_summary_agreement_rtol": 1e-14,
+  "review_provenance": "separate read-only cloud review coordinated by parent research task; results relayed 2026-10-26",
+  "reviewed_commit": "47b024bb68da0d4ea62083e23ecafbf814bfb0ac",
+  "sampler_dry_run_without_torch": "passed",
+  "source_and_output_manifest_hashes": "matched reviewed commit",
+  "sufficient_statistics_max_relative_difference": 4.74e-16,
+  "tests_passed": 19
+}

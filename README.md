@@ -1,3 +1,5 @@
+> **Research reproduction branch (26 October 2026)**: [PDF audit report](report/report.pdf) · [中文概览](report/README_zh.md) · [Code and measured validation](repro/README.md). This is a bounded demo/analytic validation deliverable, **not a completed reproduction of all paper figures**. Original training and sampling code below is preserved.
+
 # diffusion-lagr
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10563386.svg)](https://doi.org/10.5281/zenodo.10563386)

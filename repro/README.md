@@ -22,6 +22,9 @@ From the repository root, activate an existing environment with NumPy. For the p
 python -m unittest discover -s repro/tests -v
 python -m repro.validate_demo
 MPLCONFIGDIR=repro/.cache/matplotlib python -m repro.plot_audit
+MPLCONFIGDIR=repro/.cache/matplotlib python -m repro.explore_estimators
+python -m repro.report_tables
+cd report && latexmk -pdf -interaction=nonstopmode -halt-on-error report.tex
 ```
 
 The measured Mac run used Python 3.12.12, NumPy 2.3.5, Matplotlib 3.10.7 and HDF5 CLI 2.2.0. SciPy 1.16.3 was available but not required by these kernels. Exact input and code hashes, environment, seeds, output hashes and commands are in `results/*manifest.json`; sufficient per-trajectory statistics are retained for independent checks.
@@ -43,6 +46,10 @@ A future, explicitly budgeted GPU run adds `--execute`. It requires the selected
 Input axes are trajectory, time, component. Even structure functions average uncentered powers of velocity increments. Generalized flatness divides the pth moment by S2^(p/2). Mixed flatness averages xy/xz/yz numerator pairs and divides by the pooled S2 squared. Paper-type ranges use ten trajectory partitions per component; they are min/max envelopes, **not** confidence intervals. Additional percentile bootstrap intervals resample whole physical trajectories, retaining temporal and component dependence. They assume exchangeability of observed traces and exclude shared-DNS, model-training and systematic errors.
 
 Local exponents use second-order differences of log moments against log lag. Publication comparisons require the dense integer grid 1..1024; sparse demo diagnostics do not implement Figure 5 comparisons. Histograms retain out-of-range mass and do not renormalize away the tails. Acceleration supports interior central, forward, and NumPy-gradient stencils with explicit dt. The per-sample versus physical-time unit issue must be reported before comparing Table II.
+
+`explore_estimators` separately measures all integer lags 1..1024 on the 256-trace demo, finite-subset high-order sensitivity, and 2000 trajectory-cluster bootstrap resamples for Table II quantities. The dense-grid plot is still a demo estimator study, not a DNS/DM paper comparison. The Figure 3b audit plots **1-alpha_bar on a logarithmic ordinate**; its CSV retains both alpha_bar and noise variance, including the zero-noise A endpoint omitted from the log curve.
+
+A separate read-only audit of commit `47b024b` passed all 19 tests and independently matched numerical summaries at rtol=1e-14 (sufficient-statistic relative difference <=4.74e-16). It identified and prompted the Figure 3b ordinate correction. It did not test neural inference. See `manifests/independent_review.json` for scope.
 
 ## Data and rights
 

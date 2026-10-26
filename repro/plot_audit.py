@@ -30,28 +30,33 @@ def main():
         b = betas(name, steps)
         a = np.r_[1., np.cumprod(1 - b)]
         x = np.arange(steps + 1) / steps
-        ax.plot(x, a, color=color, lw=1.8, label=label, ls="--" if name == "linear_upstream" else "-")
+        # Original Figure 3b displays noise variance, 1-alpha_bar, on a log axis.
+        # n=0 has exactly zero noise and cannot be placed on the log curve.
+        ax.semilogy(x[1:], 1 - a[1:], color=color, lw=1.8, label=label,
+                    ls="--" if name == "linear_upstream" else "-")
         for i in range(steps + 1):
-            rows.append([name, steps, i, x[i], a[i]])
+            rows.append([name, steps, i, x[i], a[i], 1 - a[i]])
         metrics[name] = {"steps": steps, "beta_first": float(b[0]), "beta_last": float(b[-1]),
                          "alpha_bar_terminal_discrete": float(a[-1])}
         if name in ("tanh6,1", "power4"):
             metrics[name]["analytic_discrete_max_abs_error_excluding_clipped_endpoint"] = float(np.max(np.abs(a[:-1] - alpha_bar(x[:-1], name))))
             metrics[name]["max_abs_beta_error_vs_upstream"] = float(np.max(np.abs(b - reference(name, steps))))
-    for fraction, label in [(0, "A"), (.06, "B"), (.27, "C"), (.52, "D")]:
-        y = alpha_bar(fraction)
+    for fraction, label in [(.06, "B"), (.27, "C"), (.52, "D")]:
+        y = 1 - alpha_bar(fraction)
         ax.plot(fraction, y, "o", color=colors[0], ms=4)
-        ax.annotate(label, (fraction, y), xytext=(3, -17), textcoords="offset points")
-    ax.set(xlabel=r"Normalized forward diffusion step $n/N$", ylabel=r"$\bar\alpha_n$",
-           title="Figure 3b: analytic schedules and code discrepancy", xlim=(0, 1), ylim=(-.02, 1.05))
-    ax.legend(loc="lower left", fontsize=8, frameon=False)
+        ax.annotate(label, (fraction, y), xytext=(3, 5), textcoords="offset points")
+    ax.annotate("A: zero noise (outside log scale)", (0, 1e-12), xytext=(.035, 5e-12),
+                textcoords="data", fontsize=8, arrowprops={"arrowstyle":"-", "color":"0.4"})
+    ax.set(xlabel=r"Normalized forward diffusion step $n/N$", ylabel=r"Noise variance $1-\bar\alpha_n$",
+           title="Figure 3b: noise schedules and code discrepancy", xlim=(0, 1), ylim=(1e-12, 1.5))
+    ax.legend(loc="lower right", fontsize=8, frameon=False)
     for suffix in ("pdf", "png"):
         fig.savefig(args.output / f"figure3b_schedule_audit.{suffix}", dpi=180)
     plt.close(fig)
     csv_path = args.results / "schedule_curves.csv"
     with csv_path.open("w", newline="") as handle:
         writer = csv.writer(handle)
-        writer.writerow(["variant", "N", "n", "n_over_N", "alpha_bar_discrete"])
+        writer.writerow(["variant", "N", "n", "n_over_N", "alpha_bar_discrete", "noise_variance_discrete"])
         writer.writerows(rows)
     write_json(args.results / "schedule_metrics.json", {
         "classification": "analytic_panel_recalculation_with_unresolved_linear_variant", "metrics": metrics,

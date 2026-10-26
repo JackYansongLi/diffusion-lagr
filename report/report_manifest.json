@@ -1,0 +1,110 @@
+{
+  "classification": "bounded_reproduction_audit_report_NOT_full_paper_reproduction",
+  "command": "python -m repro.report_tables; cd report && latexmk -pdf -interaction=nonstopmode -halt-on-error report.tex",
+  "compilation": "successful, final log has no warnings or overfull/underfull boxes",
+  "compiler": "pdfTeX 3.141592653-2.6-1.40.29 (TeX Live 2026)",
+  "created_utc": "2026-10-26T10:36:30.341945+00:00",
+  "environment": {
+    "packages": {
+      "matplotlib": "3.10.7",
+      "numpy": "2.3.5",
+      "scipy": "1.16.3"
+    },
+    "platform": "macOS-27.2-arm64-arm-64bit",
+    "python": "3.12.12"
+  },
+  "independent_review": "repro/manifests/independent_review.json",
+  "inputs": [
+    {
+      "bytes": 190,
+      "name": "derivative_table.tex",
+      "sha256": "a0bfa5502991de46336f59683284ee0788d506300b5abee011878066c42c895e"
+    },
+    {
+      "bytes": 257,
+      "name": "measured_macros.tex",
+      "sha256": "72bc40d4d38d9c24b3ec2f053a76ae0f69579c4d5ee6aa3b3a69b4cd7f91c854"
+    },
+    {
+      "bytes": 24943,
+      "name": "report.tex",
+      "sha256": "2de90a70e76768be50420b8dc237be1b6aac2d0e32a64f207a1c4bb2c2f79f55"
+    },
+    {
+      "bytes": 338,
+      "name": "schedule_table.tex",
+      "sha256": "bff7e69f03f1dbaa7985501f2477a752c692ba3b36d0db68474758ca070fcd0c"
+    },
+    {
+      "bytes": 178,
+      "name": "sensitivity_table.tex",
+      "sha256": "d3896347f489ca30f618b94c6c463096a828891bbe92144b12689ee12da36ef8"
+    },
+    {
+      "bytes": 364,
+      "name": "single_time_table.tex",
+      "sha256": "711e3a2ee772f0dbf8a4bf18064d14c64ea1c7b302f7c2b529b3113cfaf275f3"
+    },
+    {
+      "bytes": 15666,
+      "name": "demo_summary.json",
+      "sha256": "532082e57c4c0e2ef0844b86f6ef9e47bb056f1ea5e751c80a29853e65699dbf"
+    },
+    {
+      "bytes": 11591,
+      "name": "estimator_exploration.json",
+      "sha256": "744a9642a12876abda6db5848bc1c52e5630751bcca1d3b39ff02f9186e5e7a4"
+    },
+    {
+      "bytes": 1227,
+      "name": "schedule_metrics.json",
+      "sha256": "88dd55ca5a95d137a85d407d445a676957768ec5f96a49ce63e1bbb101e63e10"
+    },
+    {
+      "bytes": 25439,
+      "name": "demo_diagnostics.pdf",
+      "sha256": "d645b0acd0849709f946e83f9db0ca2f3a2e01e679b9c6c6f42e75bd2f312b0e"
+    },
+    {
+      "bytes": 27610,
+      "name": "demo_estimator_sensitivity.pdf",
+      "sha256": "c02885ed52e1cabf1f9013402f0731447083321f76515fcdb2d9b8f18d5aa7a2"
+    },
+    {
+      "bytes": 22517,
+      "name": "figure3b_schedule_audit.pdf",
+      "sha256": "b84d95948239b6bb867fecbc6e674a9ae079a63cec3952c2b7b190f706d732d9"
+    }
+  ],
+  "output": {
+    "bytes": 484190,
+    "path": "report/report.pdf",
+    "sha256": "d30e823315d1893147787d3be6b9f636337c3dd3b5efc24b6cf81b8a0cbdf862"
+  },
+  "pages": 7,
+  "paper": "https://arxiv.org/abs/2307.08529v2",
+  "seed": null,
+  "source_sha256": {
+    "repro/__init__.py": "1b1f81f8cd93fdefed6d4c7ae5371bc1fe237793413019606d7194891e95ecc3",
+    "repro/data.py": "62512813b1b04839bb6f1cfcaa8100df9df5b63eb336ff22ab621fcfd7811498",
+    "repro/explore_estimators.py": "71f3bab20950806fc375244a21e078519a80d4fae41057618fd47d7702eb48cb",
+    "repro/plot_audit.py": "90da668cc736ae60f546c39cc74f7b3334dd32342e227474728dcb0278f40b28",
+    "repro/provenance.py": "e63f05dd8baaf5ed84b24d5cc1558752165d00b0aff02179699a48783d74f4d6",
+    "repro/report_tables.py": "adb334722a3d8e36461bbd0107ea0fe18af63d02ea5c37b87627fd68b16c2f9f",
+    "repro/sample_sharded.py": "b64bafb1706760911ef7c9a21aa48466f311afebd259ea28cbe0f4e827f79732",
+    "repro/sampling_plan.py": "afca08f5e239e2d7af987bac11187a07735f8277ad91941a3ca2d32d19545bb5",
+    "repro/schedules.py": "e7d05ccdc9f14dbb717dca7a0e592bffb2ecf71dad5ecfaeef54f37d53485248",
+    "repro/statistics.py": "7010e40954f3f652674a8e39f07d428db3b6897d7bdd881f72536c7541187a78",
+    "repro/tests/test_numerics.py": "566bf0a9090cc0589683613321e64ab02e8ea033a64aa00501c6b139b102dbdd",
+    "repro/validate_demo.py": "cda82a7148174272f389d8256072581931c5ac7043d0d0dfd3a2c4774ff938ba"
+  },
+  "test_suite": {
+    "log_sha256": "01b7634da68d431d45c88f631e00ed673a833957c822c56b6897789ed63b1f5a",
+    "passed": 19,
+    "tests": 19
+  },
+  "upstream_commit": "77da6cdc67775aa45af6c4148068f00a75e54c41",
+  "visual_qa": "All seven pages rendered with Poppler and inspected; no clipped tables, overlapping text or missing figures. Corrected Figure3b uses log noise variance and separate zero-noise annotation.",
+  "working_commit": "47b024bb68da0d4ea62083e23ecafbf814bfb0ac",
+  "working_tree_dirty": true
+}

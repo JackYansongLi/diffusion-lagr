@@ -1,0 +1,57 @@
+{
+  "classification": "original_estimator_exploration_on_bundled_DNS_demo_NOT_model_improvement",
+  "command": "python -m repro.explore_estimators --seed 20261026 --bootstrap 2000",
+  "created_utc": "2026-10-26T10:20:20.191789+00:00",
+  "environment": {
+    "packages": {
+      "matplotlib": "3.10.7",
+      "numpy": "2.3.5",
+      "scipy": "1.16.3"
+    },
+    "platform": "macOS-27.2-arm64-arm-64bit",
+    "python": "3.12.12"
+  },
+  "inputs": [
+    {
+      "bytes": 12290096,
+      "name": "Lagr_u3c_diffusion-demo.h5",
+      "sha256": "d8c221ec0f1f603df622854cf54c0c8e386fc507b36b4a8b880269e0cbd8b6a4"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "repro/results/estimator_exploration_raw.npz",
+      "sha256": "b39daa8fe3dbc0d7428812eee43bcd897ace365f792cd465152518bf960812f7"
+    },
+    {
+      "name": "repro/results/estimator_exploration.json",
+      "sha256": "744a9642a12876abda6db5848bc1c52e5630751bcca1d3b39ff02f9186e5e7a4"
+    },
+    {
+      "name": "repro/figures/demo_estimator_sensitivity.png",
+      "sha256": "0dae77a7a3d44d4b5478f4c47bcb8e9c215baa02f4c0dc9929c80df05f17ead6"
+    },
+    {
+      "name": "repro/figures/demo_estimator_sensitivity.pdf",
+      "sha256": "c02885ed52e1cabf1f9013402f0731447083321f76515fcdb2d9b8f18d5aa7a2"
+    }
+  ],
+  "paper": "https://arxiv.org/abs/2307.08529v2",
+  "seed": 20261026,
+  "source_sha256": {
+    "repro/__init__.py": "1b1f81f8cd93fdefed6d4c7ae5371bc1fe237793413019606d7194891e95ecc3",
+    "repro/data.py": "62512813b1b04839bb6f1cfcaa8100df9df5b63eb336ff22ab621fcfd7811498",
+    "repro/explore_estimators.py": "71f3bab20950806fc375244a21e078519a80d4fae41057618fd47d7702eb48cb",
+    "repro/plot_audit.py": "60ea611c96f87ee2bb2255c9db35431a75bebfc32fc54b7f190589ea2a243d12",
+    "repro/provenance.py": "e63f05dd8baaf5ed84b24d5cc1558752165d00b0aff02179699a48783d74f4d6",
+    "repro/sample_sharded.py": "b64bafb1706760911ef7c9a21aa48466f311afebd259ea28cbe0f4e827f79732",
+    "repro/sampling_plan.py": "afca08f5e239e2d7af987bac11187a07735f8277ad91941a3ca2d32d19545bb5",
+    "repro/schedules.py": "e7d05ccdc9f14dbb717dca7a0e592bffb2ecf71dad5ecfaeef54f37d53485248",
+    "repro/statistics.py": "7010e40954f3f652674a8e39f07d428db3b6897d7bdd881f72536c7541187a78",
+    "repro/tests/test_numerics.py": "566bf0a9090cc0589683613321e64ab02e8ea033a64aa00501c6b139b102dbdd",
+    "repro/validate_demo.py": "cda82a7148174272f389d8256072581931c5ac7043d0d0dfd3a2c4774ff938ba"
+  },
+  "upstream_commit": "77da6cdc67775aa45af6c4148068f00a75e54c41",
+  "working_commit": "47b024bb68da0d4ea62083e23ecafbf814bfb0ac",
+  "working_tree_dirty": true
+}
