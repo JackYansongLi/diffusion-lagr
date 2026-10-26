@@ -1,0 +1,18 @@
+__pycache__/
+*.py[cod]
+.venv*/
+.pytest_cache/
+.DS_Store
+# Keep large or licensed research inputs outside version control.
+repro/data/
+repro/checkpoints/
+repro/runs/
+repro/.cache/
+*.pt
+*.pth
+report/*.aux
+report/*.log
+report/*.out
+report/*.toc
+report/*.fls
+report/*.fdb_latexmk

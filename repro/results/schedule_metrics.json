@@ -1,0 +1,34 @@
+{
+  "classification": "analytic_panel_recalculation_with_unresolved_linear_variant",
+  "metrics": {
+    "linear_paper": {
+      "alpha_bar_terminal_discrete": 2.6532323718239917e-18,
+      "beta_first": 0.0001,
+      "beta_last": 0.02,
+      "steps": 4000
+    },
+    "linear_upstream": {
+      "alpha_bar_terminal_discrete": 4.246652275802249e-05,
+      "beta_first": 2.5e-05,
+      "beta_last": 0.005,
+      "steps": 4000
+    },
+    "power4": {
+      "alpha_bar_terminal_discrete": 4.990632810058519e-06,
+      "analytic_discrete_max_abs_error_excluding_clipped_endpoint": 0.0,
+      "beta_first": 2.4413804311507192e-12,
+      "beta_last": 0.999,
+      "max_abs_beta_error_vs_upstream": 0.0,
+      "steps": 800
+    },
+    "tanh6,1": {
+      "alpha_bar_terminal_discrete": 2.1000064289691995e-06,
+      "analytic_discrete_max_abs_error_excluding_clipped_endpoint": 1.734723475976807e-18,
+      "beta_first": 1.2314921982170546e-07,
+      "beta_last": 0.999,
+      "max_abs_beta_error_vs_upstream": 3.1086244689504383e-15,
+      "steps": 800
+    }
+  },
+  "note": "No checkpoints or synthetic proxy data. Both paper Eq24 and upstream implementation are evaluated; paper/code linear endpoints differ by factor four at N=4000."
+}

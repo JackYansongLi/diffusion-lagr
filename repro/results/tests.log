@@ -1,0 +1,24 @@
+test_acceleration_dt_convention (test_numerics.NumericalTests.test_acceleration_dt_convention) ... ok
+test_batch_envelope_shape_and_no_ci_claim (test_numerics.NumericalTests.test_batch_envelope_shape_and_no_ci_claim) ... ok
+test_batched_and_direct_moments_agree (test_numerics.NumericalTests.test_batched_and_direct_moments_agree) ... ok
+test_bootstrap_constant_and_component_cluster (test_numerics.NumericalTests.test_bootstrap_constant_and_component_cluster) ... ok
+test_central_difference_quadratic (test_numerics.NumericalTests.test_central_difference_quadratic) ... ok
+test_correlation_zero (test_numerics.NumericalTests.test_correlation_zero) ... ok
+test_denormalization (test_numerics.NumericalTests.test_denormalization) ... ok
+test_gaussian_population_reference (test_numerics.NumericalTests.test_gaussian_population_reference) ... ok
+test_histogram_retains_tail_mass (test_numerics.NumericalTests.test_histogram_retains_tail_mass) ... ok
+test_input_guards (test_numerics.NumericalTests.test_input_guards) ... ok
+test_linear_moments_flatness_and_local_slope (test_numerics.NumericalTests.test_linear_moments_flatness_and_local_slope) ... ok
+test_mixed_components_and_permutations (test_numerics.NumericalTests.test_mixed_components_and_permutations) ... ok
+test_squared_cross_covariance (test_numerics.NumericalTests.test_squared_cross_covariance) ... ok
+test_translation_and_scale (test_numerics.NumericalTests.test_translation_and_scale) ... ok
+test_batches_exact_coverage_and_rank_unique_seeds (test_numerics.ScheduleAndSamplingTests.test_batches_exact_coverage_and_rank_unique_seeds) ... ok
+test_exact_upstream_schedule_comparison (test_numerics.ScheduleAndSamplingTests.test_exact_upstream_schedule_comparison) ... ok
+test_linear_paper_discrepancy_is_explicit (test_numerics.ScheduleAndSamplingTests.test_linear_paper_discrepancy_is_explicit) ... ok
+test_schedule_monotonicity_and_terminal_clipping (test_numerics.ScheduleAndSamplingTests.test_schedule_monotonicity_and_terminal_clipping) ... ok
+test_selected_history_indices (test_numerics.ScheduleAndSamplingTests.test_selected_history_indices) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.112s
+
+OK

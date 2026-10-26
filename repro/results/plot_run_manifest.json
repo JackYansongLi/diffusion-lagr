@@ -1,0 +1,69 @@
+{
+  "classification": "analytic_schedule_audit_and_demo_diagnostic",
+  "command": "python -m repro.plot_audit --output repro/figures --results repro/results",
+  "created_utc": "2026-10-26T10:17:59.278169+00:00",
+  "environment": {
+    "packages": {
+      "matplotlib": "3.10.7",
+      "numpy": "2.3.5",
+      "scipy": "1.16.3"
+    },
+    "platform": "macOS-27.2-arm64-arm-64bit",
+    "python": "3.12.12"
+  },
+  "inputs": [
+    {
+      "bytes": 15666,
+      "name": "demo_summary.json",
+      "sha256": "532082e57c4c0e2ef0844b86f6ef9e47bb056f1ea5e751c80a29853e65699dbf"
+    },
+    {
+      "bytes": 38567,
+      "name": "gaussian_diffusion.py",
+      "sha256": "c8794cc4cfd85092889a261f55179d8672246bfed10220de4b7cfce684830163"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "repro/figures/figure3b_schedule_audit.pdf",
+      "sha256": "72637a01982f932f090992cd23150cc3f3051826d28609929b5b492dc69b6e60"
+    },
+    {
+      "name": "repro/figures/demo_diagnostics.pdf",
+      "sha256": "93bbb0abaa65cdddc519282c7bb8eb49ea024d3be4da68b4d9dd783168a68938"
+    },
+    {
+      "name": "repro/figures/figure3b_schedule_audit.png",
+      "sha256": "0a35c3741d3c5d99a70c3eaa5a83568c6d9e5332a87164b507ef13f0113c0f8d"
+    },
+    {
+      "name": "repro/figures/demo_diagnostics.png",
+      "sha256": "e36db5a6b9dfb43535a9cc51153e02fee023e76b3f2a129468802f8d241944f4"
+    },
+    {
+      "name": "repro/results/schedule_curves.csv",
+      "sha256": "6fa42561d358875995da806a673983b6ccd14a6020256d0c3266916041003c86"
+    },
+    {
+      "name": "repro/results/schedule_metrics.json",
+      "sha256": "88dd55ca5a95d137a85d407d445a676957768ec5f96a49ce63e1bbb101e63e10"
+    }
+  ],
+  "paper": "https://arxiv.org/abs/2307.08529v2",
+  "seed": null,
+  "source_sha256": {
+    "repro/__init__.py": "1b1f81f8cd93fdefed6d4c7ae5371bc1fe237793413019606d7194891e95ecc3",
+    "repro/data.py": "62512813b1b04839bb6f1cfcaa8100df9df5b63eb336ff22ab621fcfd7811498",
+    "repro/plot_audit.py": "60ea611c96f87ee2bb2255c9db35431a75bebfc32fc54b7f190589ea2a243d12",
+    "repro/provenance.py": "e63f05dd8baaf5ed84b24d5cc1558752165d00b0aff02179699a48783d74f4d6",
+    "repro/sample_sharded.py": "b64bafb1706760911ef7c9a21aa48466f311afebd259ea28cbe0f4e827f79732",
+    "repro/sampling_plan.py": "afca08f5e239e2d7af987bac11187a07735f8277ad91941a3ca2d32d19545bb5",
+    "repro/schedules.py": "e7d05ccdc9f14dbb717dca7a0e592bffb2ecf71dad5ecfaeef54f37d53485248",
+    "repro/statistics.py": "7010e40954f3f652674a8e39f07d428db3b6897d7bdd881f72536c7541187a78",
+    "repro/tests/test_numerics.py": "566bf0a9090cc0589683613321e64ab02e8ea033a64aa00501c6b139b102dbdd",
+    "repro/validate_demo.py": "cda82a7148174272f389d8256072581931c5ac7043d0d0dfd3a2c4774ff938ba"
+  },
+  "upstream_commit": "77da6cdc67775aa45af6c4148068f00a75e54c41",
+  "working_commit": "77da6cdc67775aa45af6c4148068f00a75e54c41",
+  "working_tree_dirty": true
+}

@@ -1,0 +1,51 @@
+{
+  "assets": [
+    {
+      "bytes": 15728642096,
+      "local_status": "not_downloaded",
+      "md5": "be3e301cd0e73600af8d2643bb80d5e1",
+      "name": "Lagr_u3c_diffusion.h5",
+      "url": "https://www.openaccessrepository.it/api/records/z9akz-5km92/files/Lagr_u3c_diffusion.h5/content"
+    },
+    {
+      "bytes": 15728642064,
+      "local_status": "not_downloaded",
+      "md5": "5850b9268199775dd6fcbd70c38e7d7d",
+      "name": "Lagr_u1c_diffusion.h5",
+      "url": "https://www.openaccessrepository.it/api/records/z9akz-5km92/files/Lagr_u1c_diffusion.h5/content"
+    },
+    {
+      "bytes": 2867200360,
+      "local_status": "not_downloaded",
+      "md5": "a35c22bef98f575a8ad4cca5edb6771f",
+      "name": "samples_358400x2000x1_DM-1c.npz",
+      "url": "https://www.openaccessrepository.it/api/records/z9akz-5km92/files/samples_358400x2000x1_DM-1c.npz/content"
+    },
+    {
+      "bytes": 8601600360,
+      "local_status": "not_downloaded",
+      "md5": "d4744cda65fb11c85cdd2cd4604e88ae",
+      "name": "samples_358400x2000x3_DM-3c.npz",
+      "url": "https://www.openaccessrepository.it/api/records/z9akz-5km92/files/samples_358400x2000x3_DM-3c.npz/content"
+    },
+    {
+      "bytes": 12290064,
+      "local_status": "bundled_upstream",
+      "md5": "f17278609572743cf7652dd86b6f67dc",
+      "name": "Lagr_u1c_diffusion-demo.h5",
+      "url": "https://www.openaccessrepository.it/api/records/z9akz-5km92/files/Lagr_u1c_diffusion-demo.h5/content"
+    },
+    {
+      "bytes": 12290096,
+      "local_status": "bundled_upstream",
+      "md5": "e7da6cdda2f3645ddd79fcd63e68f533",
+      "name": "Lagr_u3c_diffusion-demo.h5",
+      "url": "https://www.openaccessrepository.it/api/records/z9akz-5km92/files/Lagr_u3c_diffusion-demo.h5/content"
+    }
+  ],
+  "doi": "10.15161/oar.it/143615",
+  "license": "CC-BY-4.0",
+  "metadata_provenance": "independent paper audit supplied verified public record metadata; local demo MD5 independently checked",
+  "record": "https://www.openaccessrepository.it/records/z9akz-5km92",
+  "resume_warning": "Audit bounded probe found HTTP Range ignored; do not assume resumability."
+}

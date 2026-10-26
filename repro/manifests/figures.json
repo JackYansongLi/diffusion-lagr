@@ -1,0 +1,303 @@
+{
+  "additional_table_II": "unit sensitivity measured on demo only",
+  "global_status": "NOT full reproduction; demo outputs are validation only",
+  "inventory_provenance": "main paper captions and independent supplementary paper audit",
+  "panels": [
+    {
+      "figure": "1",
+      "note": "Published DM1c sample count is below paper86x;10pct asset missing.",
+      "observable": "increment density",
+      "panel": "a",
+      "requires": [
+        "DNS",
+        "DM1c",
+        "DM1c10pct"
+      ],
+      "status": "not_run"
+    },
+    {
+      "figure": "1",
+      "note": "",
+      "observable": "single-component trace examples",
+      "panel": "b",
+      "requires": [
+        "DM1c"
+      ],
+      "status": "not_run"
+    },
+    {
+      "figure": "1",
+      "note": "",
+      "observable": "single-component trace examples",
+      "panel": "c",
+      "requires": [
+        "DM1c"
+      ],
+      "status": "not_run"
+    },
+    {
+      "figure": "1",
+      "note": "",
+      "observable": "single-component trace examples",
+      "panel": "d",
+      "requires": [
+        "DM1c"
+      ],
+      "status": "not_run"
+    },
+    {
+      "figure": "1",
+      "note": "Published samples may support reanalysis; physical positions require an explicitly stated integration and selection convention.",
+      "observable": "three-component trace/topology",
+      "panel": "e",
+      "requires": [
+        "DNS",
+        "DM3c"
+      ],
+      "status": "not_run"
+    },
+    {
+      "figure": "1",
+      "note": "Published samples may support reanalysis; physical positions require an explicitly stated integration and selection convention.",
+      "observable": "three-component trace/topology",
+      "panel": "f",
+      "requires": [
+        "DNS",
+        "DM3c"
+      ],
+      "status": "not_run"
+    },
+    {
+      "figure": "2",
+      "note": "",
+      "observable": "acceleration density",
+      "panel": "main",
+      "requires": [
+        "DNS",
+        "DM1c",
+        "DM1c10pct"
+      ],
+      "status": "not_run"
+    },
+    {
+      "figure": "2",
+      "note": "Derivative stencil/time units unresolved; explicit variants required.",
+      "observable": "acceleration correlation",
+      "panel": "inset",
+      "requires": [
+        "DNS",
+        "DM1c",
+        "DM1c10pct"
+      ],
+      "status": "not_run"
+    },
+    {
+      "figure": "3",
+      "note": "Redraw permitted as explanatory reconstruction; no neural forward pass executed.",
+      "observable": "architecture and hyperparameters",
+      "panel": "a",
+      "requires": [
+        "paper",
+        "model config"
+      ],
+      "status": "documented_only"
+    },
+    {
+      "figure": "3",
+      "note": "Code/paper linear schedules differ; both variants saved, not asserted to be identical.",
+      "observable": "diffusion noise schedules",
+      "panel": "b",
+      "requires": [
+        "analytic equations",
+        "upstream code"
+      ],
+      "status": "analytic_recalculation"
+    },
+    {
+      "figure": "3",
+      "note": "New sampler supports selected states; no checkpoint downloaded or runtime-tested.",
+      "observable": "reverse-generation stage statistics",
+      "panel": "c",
+      "requires": [
+        "DM1c checkpoint",
+        "V416",
+        "V216",
+        "V48",
+        "V0"
+      ],
+      "status": "not_run"
+    },
+    {
+      "figure": "3",
+      "note": "New sampler supports selected states; no checkpoint downloaded or runtime-tested.",
+      "observable": "reverse-generation stage statistics",
+      "panel": "d",
+      "requires": [
+        "DM1c checkpoint",
+        "V416",
+        "V216",
+        "V48",
+        "V0"
+      ],
+      "status": "not_run"
+    },
+    {
+      "figure": "3",
+      "note": "New sampler supports selected states; no checkpoint downloaded or runtime-tested.",
+      "observable": "reverse-generation stage statistics",
+      "panel": "e",
+      "requires": [
+        "DM1c checkpoint",
+        "V416",
+        "V216",
+        "V48",
+        "V0"
+      ],
+      "status": "not_run"
+    },
+    {
+      "figure": "3",
+      "note": "New sampler supports selected states; no checkpoint downloaded or runtime-tested.",
+      "observable": "reverse-generation stage statistics",
+      "panel": "f",
+      "requires": [
+        "DM1c checkpoint",
+        "V416",
+        "V216",
+        "V48",
+        "V0"
+      ],
+      "status": "not_run"
+    },
+    {
+      "figure": "4",
+      "note": "",
+      "observable": "S2,S4,S6",
+      "panel": "a",
+      "requires": [
+        "DNS",
+        "DM1c",
+        "DM3c"
+      ],
+      "status": "not_run"
+    },
+    {
+      "figure": "4",
+      "note": "",
+      "observable": "F4,F6,F8",
+      "panel": "b",
+      "requires": [
+        "DNS",
+        "DM1c",
+        "DM3c"
+      ],
+      "status": "not_run"
+    },
+    {
+      "figure": "4",
+      "note": "",
+      "observable": "mixed flatness",
+      "panel": "c",
+      "requires": [
+        "DNS",
+        "DM3c"
+      ],
+      "status": "not_run"
+    },
+    {
+      "figure": "5",
+      "note": "",
+      "observable": "local fourth-order exponent",
+      "panel": "a",
+      "requires": [
+        "DNS",
+        "DM1c",
+        "DM3c",
+        "integer lags1..1024"
+      ],
+      "status": "not_run"
+    },
+    {
+      "figure": "5",
+      "note": "Paper redraws another publication; no digitized/copied curve is treated as rerun results.",
+      "observable": "external DNS/experimental compilation",
+      "panel": "b",
+      "requires": [
+        "Arneodo et al.2008 source datasets"
+      ],
+      "status": "external_data_missing"
+    },
+    {
+      "figure": "6",
+      "note": "",
+      "observable": "training loss",
+      "panel": "main",
+      "requires": [
+        "DM1c full training log"
+      ],
+      "status": "asset_missing"
+    },
+    {
+      "figure": "6",
+      "note": "",
+      "observable": "training-stage flatness",
+      "panel": "inset",
+      "requires": [
+        "DNS",
+        "DM1c10k checkpoint",
+        "DM1c30k checkpoint",
+        "DM1c250k checkpoint"
+      ],
+      "status": "asset_missing"
+    },
+    {
+      "figure": "S1",
+      "note": "",
+      "observable": "reduced-data model comparison",
+      "panel": "a",
+      "requires": [
+        "DNS",
+        "DM1c100pct",
+        "DM1c10pct",
+        "DM1c1pct"
+      ],
+      "status": "asset_missing"
+    },
+    {
+      "figure": "S1",
+      "note": "",
+      "observable": "reduced-data model comparison",
+      "panel": "b",
+      "requires": [
+        "DNS",
+        "DM1c100pct",
+        "DM1c10pct",
+        "DM1c1pct"
+      ],
+      "status": "asset_missing"
+    },
+    {
+      "figure": "S2",
+      "note": "",
+      "observable": "WGAN comparison",
+      "panel": "a",
+      "requires": [
+        "DNS",
+        "WGAN architecture/checkpoint/generated data"
+      ],
+      "status": "asset_missing"
+    },
+    {
+      "figure": "S2",
+      "note": "",
+      "observable": "WGAN comparison",
+      "panel": "b",
+      "requires": [
+        "DNS",
+        "WGAN architecture/checkpoint/generated data"
+      ],
+      "status": "asset_missing"
+    }
+  ],
+  "target": "arXiv:2307.08529v2 plus separate Supplementary_Information.pdf"
+}

@@ -1,0 +1,55 @@
+{
+  "classification": "bundled_dns_demo_pipeline_validation_NOT_paper_reproduction",
+  "command": "python -m repro.validate_demo --output repro/results --seed 230708529",
+  "created_utc": "2026-10-26T10:17:57.030167+00:00",
+  "environment": {
+    "packages": {
+      "matplotlib": "3.10.7",
+      "numpy": "2.3.5",
+      "scipy": "1.16.3"
+    },
+    "platform": "macOS-27.2-arm64-arm-64bit",
+    "python": "3.12.12"
+  },
+  "inputs": [
+    {
+      "bytes": 12290096,
+      "name": "Lagr_u3c_diffusion-demo.h5",
+      "sha256": "d8c221ec0f1f603df622854cf54c0c8e386fc507b36b4a8b880269e0cbd8b6a4"
+    },
+    {
+      "bytes": 12290064,
+      "name": "Lagr_u1c_diffusion-demo.h5",
+      "sha256": "7730ea2f0a1305df59cb0a59fc4e43a39708784ce977e9775f422f87e21d26a4"
+    }
+  ],
+  "outputs": [
+    {
+      "bytes": 279964,
+      "name": "demo_sufficient_statistics.npz",
+      "sha256": "30c1d95a730fbe8615ceeb813cbffec05bb5a0fabf001aa3c70031c2bd471ee4"
+    },
+    {
+      "bytes": 15666,
+      "name": "demo_summary.json",
+      "sha256": "532082e57c4c0e2ef0844b86f6ef9e47bb056f1ea5e751c80a29853e65699dbf"
+    }
+  ],
+  "paper": "https://arxiv.org/abs/2307.08529v2",
+  "seed": 230708529,
+  "source_sha256": {
+    "repro/__init__.py": "1b1f81f8cd93fdefed6d4c7ae5371bc1fe237793413019606d7194891e95ecc3",
+    "repro/data.py": "62512813b1b04839bb6f1cfcaa8100df9df5b63eb336ff22ab621fcfd7811498",
+    "repro/plot_audit.py": "60ea611c96f87ee2bb2255c9db35431a75bebfc32fc54b7f190589ea2a243d12",
+    "repro/provenance.py": "e63f05dd8baaf5ed84b24d5cc1558752165d00b0aff02179699a48783d74f4d6",
+    "repro/sample_sharded.py": "b64bafb1706760911ef7c9a21aa48466f311afebd259ea28cbe0f4e827f79732",
+    "repro/sampling_plan.py": "afca08f5e239e2d7af987bac11187a07735f8277ad91941a3ca2d32d19545bb5",
+    "repro/schedules.py": "e7d05ccdc9f14dbb717dca7a0e592bffb2ecf71dad5ecfaeef54f37d53485248",
+    "repro/statistics.py": "7010e40954f3f652674a8e39f07d428db3b6897d7bdd881f72536c7541187a78",
+    "repro/tests/test_numerics.py": "566bf0a9090cc0589683613321e64ab02e8ea033a64aa00501c6b139b102dbdd",
+    "repro/validate_demo.py": "cda82a7148174272f389d8256072581931c5ac7043d0d0dfd3a2c4774ff938ba"
+  },
+  "upstream_commit": "77da6cdc67775aa45af6c4148068f00a75e54c41",
+  "working_commit": "77da6cdc67775aa45af6c4148068f00a75e54c41",
+  "working_tree_dirty": true
+}
