@@ -1,7 +1,7 @@
 {
   "classification": "bundled_dns_demo_pipeline_validation_NOT_paper_reproduction",
   "command": "python -m repro.validate_demo --output repro/results --seed 230708529",
-  "created_utc": "2026-10-26T10:17:57.030167+00:00",
+  "created_utc": "2026-10-26T10:37:45.883928+00:00",
   "environment": {
     "packages": {
       "matplotlib": "3.10.7",
@@ -30,9 +30,9 @@
       "sha256": "30c1d95a730fbe8615ceeb813cbffec05bb5a0fabf001aa3c70031c2bd471ee4"
     },
     {
-      "bytes": 15666,
+      "bytes": 15665,
       "name": "demo_summary.json",
-      "sha256": "532082e57c4c0e2ef0844b86f6ef9e47bb056f1ea5e751c80a29853e65699dbf"
+      "sha256": "d7bc9a59ebe41a50cdbffe2076d8def7d13e7f3a6107c62ff474a4bf9085e7c5"
     }
   ],
   "paper": "https://arxiv.org/abs/2307.08529v2",
@@ -40,8 +40,10 @@
   "source_sha256": {
     "repro/__init__.py": "1b1f81f8cd93fdefed6d4c7ae5371bc1fe237793413019606d7194891e95ecc3",
     "repro/data.py": "62512813b1b04839bb6f1cfcaa8100df9df5b63eb336ff22ab621fcfd7811498",
-    "repro/plot_audit.py": "60ea611c96f87ee2bb2255c9db35431a75bebfc32fc54b7f190589ea2a243d12",
+    "repro/explore_estimators.py": "71f3bab20950806fc375244a21e078519a80d4fae41057618fd47d7702eb48cb",
+    "repro/plot_audit.py": "c0236c941098344dff77de3d168eed2eab9d0c530362ff7a07105c4f64617823",
     "repro/provenance.py": "e63f05dd8baaf5ed84b24d5cc1558752165d00b0aff02179699a48783d74f4d6",
+    "repro/report_tables.py": "adb334722a3d8e36461bbd0107ea0fe18af63d02ea5c37b87627fd68b16c2f9f",
     "repro/sample_sharded.py": "b64bafb1706760911ef7c9a21aa48466f311afebd259ea28cbe0f4e827f79732",
     "repro/sampling_plan.py": "afca08f5e239e2d7af987bac11187a07735f8277ad91941a3ca2d32d19545bb5",
     "repro/schedules.py": "e7d05ccdc9f14dbb717dca7a0e592bffb2ecf71dad5ecfaeef54f37d53485248",
@@ -50,6 +52,6 @@
     "repro/validate_demo.py": "cda82a7148174272f389d8256072581931c5ac7043d0d0dfd3a2c4774ff938ba"
   },
   "upstream_commit": "77da6cdc67775aa45af6c4148068f00a75e54c41",
-  "working_commit": "77da6cdc67775aa45af6c4148068f00a75e54c41",
+  "working_commit": "b5125c816a19936855aec3ce633600ad74989092",
   "working_tree_dirty": true
 }

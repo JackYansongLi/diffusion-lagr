@@ -1,7 +1,7 @@
 {
   "classification": "analytic_schedule_audit_and_demo_diagnostic",
   "command": "python -m repro.plot_audit --output repro/figures --results repro/results",
-  "created_utc": "2026-10-26T10:32:09.940471+00:00",
+  "created_utc": "2026-10-26T10:38:05.774785+00:00",
   "environment": {
     "packages": {
       "matplotlib": "3.10.7",
@@ -13,9 +13,9 @@
   },
   "inputs": [
     {
-      "bytes": 15666,
+      "bytes": 15665,
       "name": "demo_summary.json",
-      "sha256": "532082e57c4c0e2ef0844b86f6ef9e47bb056f1ea5e751c80a29853e65699dbf"
+      "sha256": "d7bc9a59ebe41a50cdbffe2076d8def7d13e7f3a6107c62ff474a4bf9085e7c5"
     },
     {
       "bytes": 38567,
@@ -26,15 +26,15 @@
   "outputs": [
     {
       "name": "repro/figures/figure3b_schedule_audit.pdf",
-      "sha256": "b84d95948239b6bb867fecbc6e674a9ae079a63cec3952c2b7b190f706d732d9"
+      "sha256": "3a3b9940962a024223fb88917acbbe765957b4cffcf979c04e186c904e731b44"
     },
     {
       "name": "repro/figures/demo_estimator_sensitivity.pdf",
-      "sha256": "c02885ed52e1cabf1f9013402f0731447083321f76515fcdb2d9b8f18d5aa7a2"
+      "sha256": "2f0f91aae5f42e44f6a39f8b85f1ef0c2319853bdac84d01a38067b0978796ce"
     },
     {
       "name": "repro/figures/demo_diagnostics.pdf",
-      "sha256": "d645b0acd0849709f946e83f9db0ca2f3a2e01e679b9c6c6f42e75bd2f312b0e"
+      "sha256": "19ccbd5dca6d8abf67af4ea99c49225de4302b9d6d9f2b1d04fa84ffaa1a0a41"
     },
     {
       "name": "repro/figures/figure3b_schedule_audit.png",
@@ -50,7 +50,7 @@
     },
     {
       "name": "repro/results/schedule_curves.csv",
-      "sha256": "ed714407df04388fea6b91385990ca14a8ac20c10dd8177984bcfe573a4dfe8b"
+      "sha256": "33694d919fbb9fc1070d4fdfa6d3b8ab064aab353ffcf3789f7374a39e6f3efd"
     },
     {
       "name": "repro/results/schedule_metrics.json",
@@ -63,7 +63,7 @@
     "repro/__init__.py": "1b1f81f8cd93fdefed6d4c7ae5371bc1fe237793413019606d7194891e95ecc3",
     "repro/data.py": "62512813b1b04839bb6f1cfcaa8100df9df5b63eb336ff22ab621fcfd7811498",
     "repro/explore_estimators.py": "71f3bab20950806fc375244a21e078519a80d4fae41057618fd47d7702eb48cb",
-    "repro/plot_audit.py": "90da668cc736ae60f546c39cc74f7b3334dd32342e227474728dcb0278f40b28",
+    "repro/plot_audit.py": "c0236c941098344dff77de3d168eed2eab9d0c530362ff7a07105c4f64617823",
     "repro/provenance.py": "e63f05dd8baaf5ed84b24d5cc1558752165d00b0aff02179699a48783d74f4d6",
     "repro/report_tables.py": "adb334722a3d8e36461bbd0107ea0fe18af63d02ea5c37b87627fd68b16c2f9f",
     "repro/sample_sharded.py": "b64bafb1706760911ef7c9a21aa48466f311afebd259ea28cbe0f4e827f79732",
@@ -74,6 +74,6 @@
     "repro/validate_demo.py": "cda82a7148174272f389d8256072581931c5ac7043d0d0dfd3a2c4774ff938ba"
   },
   "upstream_commit": "77da6cdc67775aa45af6c4148068f00a75e54c41",
-  "working_commit": "47b024bb68da0d4ea62083e23ecafbf814bfb0ac",
+  "working_commit": "b5125c816a19936855aec3ce633600ad74989092",
   "working_tree_dirty": true
 }

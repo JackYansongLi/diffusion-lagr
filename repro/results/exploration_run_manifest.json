@@ -1,7 +1,7 @@
 {
   "classification": "original_estimator_exploration_on_bundled_DNS_demo_NOT_model_improvement",
   "command": "python -m repro.explore_estimators --seed 20261026 --bootstrap 2000",
-  "created_utc": "2026-10-26T10:20:20.191789+00:00",
+  "created_utc": "2026-10-26T10:38:04.204849+00:00",
   "environment": {
     "packages": {
       "matplotlib": "3.10.7",
@@ -25,7 +25,7 @@
     },
     {
       "name": "repro/results/estimator_exploration.json",
-      "sha256": "744a9642a12876abda6db5848bc1c52e5630751bcca1d3b39ff02f9186e5e7a4"
+      "sha256": "3f344f79e0f66fd7cbeaf5b3211aae494b38e6343010ef5823c486c2534a326f"
     },
     {
       "name": "repro/figures/demo_estimator_sensitivity.png",
@@ -33,7 +33,7 @@
     },
     {
       "name": "repro/figures/demo_estimator_sensitivity.pdf",
-      "sha256": "c02885ed52e1cabf1f9013402f0731447083321f76515fcdb2d9b8f18d5aa7a2"
+      "sha256": "2f0f91aae5f42e44f6a39f8b85f1ef0c2319853bdac84d01a38067b0978796ce"
     }
   ],
   "paper": "https://arxiv.org/abs/2307.08529v2",
@@ -42,8 +42,9 @@
     "repro/__init__.py": "1b1f81f8cd93fdefed6d4c7ae5371bc1fe237793413019606d7194891e95ecc3",
     "repro/data.py": "62512813b1b04839bb6f1cfcaa8100df9df5b63eb336ff22ab621fcfd7811498",
     "repro/explore_estimators.py": "71f3bab20950806fc375244a21e078519a80d4fae41057618fd47d7702eb48cb",
-    "repro/plot_audit.py": "60ea611c96f87ee2bb2255c9db35431a75bebfc32fc54b7f190589ea2a243d12",
+    "repro/plot_audit.py": "c0236c941098344dff77de3d168eed2eab9d0c530362ff7a07105c4f64617823",
     "repro/provenance.py": "e63f05dd8baaf5ed84b24d5cc1558752165d00b0aff02179699a48783d74f4d6",
+    "repro/report_tables.py": "adb334722a3d8e36461bbd0107ea0fe18af63d02ea5c37b87627fd68b16c2f9f",
     "repro/sample_sharded.py": "b64bafb1706760911ef7c9a21aa48466f311afebd259ea28cbe0f4e827f79732",
     "repro/sampling_plan.py": "afca08f5e239e2d7af987bac11187a07735f8277ad91941a3ca2d32d19545bb5",
     "repro/schedules.py": "e7d05ccdc9f14dbb717dca7a0e592bffb2ecf71dad5ecfaeef54f37d53485248",
@@ -52,6 +53,6 @@
     "repro/validate_demo.py": "cda82a7148174272f389d8256072581931c5ac7043d0d0dfd3a2c4774ff938ba"
   },
   "upstream_commit": "77da6cdc67775aa45af6c4148068f00a75e54c41",
-  "working_commit": "47b024bb68da0d4ea62083e23ecafbf814bfb0ac",
+  "working_commit": "b5125c816a19936855aec3ce633600ad74989092",
   "working_tree_dirty": true
 }

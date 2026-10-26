@@ -55,7 +55,7 @@ def main():
     plt.close(fig)
     csv_path = args.results / "schedule_curves.csv"
     with csv_path.open("w", newline="") as handle:
-        writer = csv.writer(handle)
+        writer = csv.writer(handle, lineterminator="\n")
         writer.writerow(["variant", "N", "n", "n_over_N", "alpha_bar_discrete", "noise_variance_discrete"])
         writer.writerows(rows)
     write_json(args.results / "schedule_metrics.json", {

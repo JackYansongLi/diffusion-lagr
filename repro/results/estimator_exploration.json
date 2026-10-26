@@ -1,7 +1,7 @@
 {
   "bootstrap_replicates": 2000,
   "classification": "original_estimator_exploration_on_bundled_DNS_demo_NOT_model_improvement",
-  "dense_grid_runtime_seconds": 17.58854045800399,
+  "dense_grid_runtime_seconds": 16.816585666965693,
   "dense_lag_grid": [
     1,
     1024
@@ -356,7 +356,7 @@
       ]
     ]
   ],
-  "runtime_seconds": 18.034553208039142,
+  "runtime_seconds": 17.21862662502099,
   "seed": 20261026,
   "single_time": {
     "A_sample_gradient": {

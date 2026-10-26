@@ -589,7 +589,7 @@
     ]
   },
   "physical_trajectories": 256,
-  "runtime_seconds": 1.2614512089639902,
+  "runtime_seconds": 0.837255125050433,
   "sampling_dt": 0.00225,
   "shape": [
     256,
